@@ -8,7 +8,6 @@ A modern React Native timer application with category grouping, progress visuali
 - Bulk actions: start, pause, reset all timers in a category
 - Progress bar for each timer
 - History tab for completed timers
-- Customizable halfway alert
 - Local data persistence (AsyncStorage)
 - Beautiful UI with dark/light theme and theme toggle
 
@@ -20,9 +19,7 @@ A modern React Native timer application with category grouping, progress visuali
 
 ### 1. Clone the repository
 ```
-git clone https://github.com/saifiShaddil/timer.git
-cd timer
-```
+git clone https://github.com/amanshrivastava1000/Timer-App.git
 
 ### 2. Install dependencies
 ```
@@ -58,8 +55,7 @@ npm install
 
   ## Theming
 - The app supports both dark and light themes.
-- Tap the palette icon in the top right of the Home screen to toggle the theme.
-- The app will also follow your system theme by default.
+- Tap the moon-outline in the top right of the Home screen to toggle the theme.
 
 - **History Tab:**
   - View a list of completed timers with their completion time.
@@ -69,6 +65,50 @@ npm install
 - React Native
 - @react-navigation/native, @react-navigation/bottom-tabs
 - @react-native-async-storage/async-storage
+
+
+## 🔧 How to Build Android and iOS APK/AAB with Expo
+
+### 📱 Android (APK/AAB)
+Make sure you've installed EAS CLI:
+
+```bash
+npm install -g eas-cli
+```
+
+1. Login to Expo:
+
+```bash
+eas login
+```
+
+2. Configure EAS (if not already done):
+
+```bash
+eas build:configure
+```
+
+3. Add your `android.package` to `app.json`:
+
+```json
+"android": {
+  "package": "com.yourname.timer"
+}
+```
+
+4. Build APK (for direct installation):
+
+```bash
+eas build -p android --profile preview
+```
+
+5. Build AAB (for Play Store):
+
+```bash
+eas build -p android --profile production
+```
+
+After completion, Expo will give you a download link for your `.apk` or `.aab`.
 
 ## License
 MIT
