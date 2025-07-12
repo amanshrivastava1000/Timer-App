@@ -4,7 +4,6 @@ import AsyncStorage from '@react-native-async-storage/async-storage';
 import { useNavigation } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 
-// Simple random ID generator
 function generateId() {
   return (
     Date.now().toString(36) +
@@ -12,7 +11,7 @@ function generateId() {
   );
 }
 
-const AddTimerScreen = () => {
+const TimerScreen = () => {
   const [name, setName] = useState('');
   const [duration, setDuration] = useState('');
   const [category, setCategory] = useState('');
@@ -76,4 +75,4 @@ const styles = StyleSheet.create({
   saveButtonText: { color: '#fff', fontWeight: 'bold', fontSize: 18 },
 });
 
-export default AddTimerScreen;
+export default TimerScreen;

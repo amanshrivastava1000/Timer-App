@@ -7,7 +7,7 @@ import { useIsFocused } from '@react-navigation/native';
 import { Ionicons } from '@expo/vector-icons';
 import { useTheme } from '../utils/ThemeContext';
 
-const HomeScreen = ({ navigation }: any) => {
+const LandingScreen = ({ navigation }: any) => {
   const [timers, setTimers] = useState([]);
   const isFocused = useIsFocused();
   const { theme, toggleTheme } = useTheme();
@@ -68,4 +68,4 @@ const styles = StyleSheet.create({
   themeToggle: { marginLeft: 8, padding: 6, borderRadius: 16, backgroundColor: 'transparent' },
 });
 
-export default HomeScreen;
+export default LandingScreen;

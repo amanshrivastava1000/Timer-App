@@ -1,8 +1,8 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
-import HomeScreen from './screens/HomeScreen';
-import AddTimerScreen from './screens/AddTimerScreen';
+import LandingScreen from './screens/LandingScreen';
+import TimerScreen from './screens/TimerScreen';
 import HistoryScreen from './screens/HistoryScreen';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
@@ -30,8 +30,8 @@ function MainApp() {
             },
           })}
         >
-          <Tab.Screen name="Timers" component={HomeScreen} />
-          <Tab.Screen name="Add Timer" component={AddTimerScreen} />
+          <Tab.Screen name="Timers" component={LandingScreen} />
+          <Tab.Screen name="Add Timer" component={TimerScreen} />
           <Tab.Screen name="History" component={HistoryScreen} />
         </Tab.Navigator>
       </SafeAreaView>
