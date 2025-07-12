@@ -21,6 +21,8 @@ A modern React Native timer application with category grouping, progress visuali
 ```
 git clone https://github.com/amanshrivastava1000/Timer-App.git
 
+cd Timer-App
+
 ### 2. Install dependencies
 ```
 npm install
